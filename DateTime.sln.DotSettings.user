@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ecbb0f23_002D0eac_002D4dce_002D9751_002Dbdd94d023027/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UnixEpochTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::60D68DC3-8202-4357-9E0E-CBD5D25A3F87::net6.0::Tests.Tests.UnixEpochTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::60D68DC3-8202-4357-9E0E-CBD5D25A3F87::net6.0::Tests.Tests.JsonConverterTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::60D68DC3-8202-4357-9E0E-CBD5D25A3F87::net6.0::Tests.Tests.JsonDeserializeTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::60D68DC3-8202-4357-9E0E-CBD5D25A3F87::net6.0::Tests.Tests.TimeZoneTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
