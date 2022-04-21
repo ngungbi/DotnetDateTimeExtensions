@@ -4,6 +4,8 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <PackageId>Ngb.DateTime</PackageId>
+        <Authors>Harish Mahatma Putra</Authors>
         <RootNamespace>Ngb.DateTime</RootNamespace>
     </PropertyGroup>
 
