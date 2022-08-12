@@ -1,11 +1,12 @@
-﻿using System.Text.Json;
+﻿using System;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace Ngb.DateTime;
 
-public class DateOnlyJsonConverter:JsonConverter<DateOnly> {
+public class DateOnlyJsonConverter : JsonConverter<DateOnly> {
     public override DateOnly Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options) {
-        return DateOnly.FromDateTime(reader.GetDateTime());
+        return DateOnly.TryParse(reader.GetString(), out var date) ? date : default;
     }
 
     public override void Write(Utf8JsonWriter writer, DateOnly value, JsonSerializerOptions options) {
