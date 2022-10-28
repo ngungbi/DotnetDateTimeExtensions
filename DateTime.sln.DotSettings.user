@@ -5,5 +5,6 @@
     &lt;TestId&gt;NUnit3x::60D68DC3-8202-4357-9E0E-CBD5D25A3F87::net6.0::Tests.Tests.JsonConverterTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::60D68DC3-8202-4357-9E0E-CBD5D25A3F87::net6.0::Tests.Tests.JsonDeserializeTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::60D68DC3-8202-4357-9E0E-CBD5D25A3F87::net6.0::Tests.Tests.TimeZoneTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::60D68DC3-8202-4357-9E0E-CBD5D25A3F87::net6.0::Tests.RangeTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

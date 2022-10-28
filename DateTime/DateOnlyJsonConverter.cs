@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace Ngb.DateTimeHelper;
 
-public class DateOnlyJsonConverter : JsonConverter<DateOnly> {
+public sealed class DateOnlyJsonConverter : JsonConverter<DateOnly> {
     public override DateOnly Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options) {
         return DateOnly.TryParse(reader.GetString(), out var date) ? date : default;
     }

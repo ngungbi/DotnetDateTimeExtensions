@@ -1,6 +1,8 @@
+using System.Collections;
+
 namespace Ngb.DateTimeHelper;
 
-public readonly ref struct DateRange {
+public readonly struct DateRange : IEnumerable<DateTime> {
     private readonly DateTime _start;
     private readonly DateTime _end;
 
@@ -15,14 +17,29 @@ public readonly ref struct DateRange {
     }
 
 
+    /// <summary>
+    /// Create an enumerable between start date and end date.
+    /// </summary>
+    /// <param name="start">Start date</param>
+    /// <param name="end">End date</param>
+    /// <returns></returns>
     public static DateRange Between(DateTime start, DateTime end) => new(start, end);
+
+    /// <summary>
+    /// Create an enumerable between start date and days after start date.
+    /// </summary>
+    /// <param name="start">Start date</param>
+    /// <param name="days">Number of days</param>
+    /// <returns></returns>
     public static DateRange From(DateTime start, int days) => new(start, start.AddDays(days));
 
     public DateRangeDescending Descending() => new(_end, _start);
 
+    IEnumerator<DateTime> IEnumerable<DateTime>.GetEnumerator() => GetEnumerator();
+    IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     public Enumerator GetEnumerator() => new(this);
 
-    public ref struct Enumerator {
+    public struct Enumerator : IEnumerator<DateTime> {
         private DateTime _current;
         private readonly DateTime _end;
 
@@ -30,6 +47,9 @@ public readonly ref struct DateRange {
             _current = range._start;
             _end = range._end;
         }
+
+        public void Reset() => throw new NotSupportedException();
+        object IEnumerator.Current => Current;
 
         public DateTime Current {
             get {
@@ -40,6 +60,7 @@ public readonly ref struct DateRange {
         }
 
         public bool MoveNext() => _current <= _end;
+        public void Dispose() { }
     }
 }
 

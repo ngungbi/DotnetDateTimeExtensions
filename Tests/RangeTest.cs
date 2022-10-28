@@ -1,5 +1,6 @@
 using System;
 using Ngb.DateTimeHelper;
+using Ngb.DateTimeHelper.Extensions;
 using NUnit.Framework;
 
 namespace Tests;
@@ -16,6 +17,8 @@ public class RangeTest {
         foreach (var date in DateRange.Between(_first, _date2)) {
             Console.WriteLine(date);
         }
+
+        foreach (var date in _first.Until(_date2)) { }
 
         foreach (var date in DateRange.From(_first, 5)) {
             Console.WriteLine(date);
