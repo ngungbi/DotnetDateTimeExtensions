@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Ngb.DateTime.TimeZone;
+namespace Ngb.DateTimeHelper.TimeZone;
 
 public class TimeZoneProvider {
     private readonly Dictionary<string, TimeZoneInfo> _list = new();

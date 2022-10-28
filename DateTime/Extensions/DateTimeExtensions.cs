@@ -1,4 +1,4 @@
-namespace Ngb.DateTime.Extensions;
+namespace Ngb.DateTimeHelper.Extensions;
 
 public static class DateTimeExtensions {
     /// <summary>

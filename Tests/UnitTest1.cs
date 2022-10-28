@@ -1,8 +1,8 @@
 using System;
 using System.Text.Json;
-using Ngb.DateTime;
-using Ngb.DateTime.Extensions;
-using Ngb.DateTime.TimeZone;
+using Ngb.DateTimeHelper;
+using Ngb.DateTimeHelper.Extensions;
+using Ngb.DateTimeHelper.TimeZone;
 using NUnit.Framework;
 
 namespace Tests;

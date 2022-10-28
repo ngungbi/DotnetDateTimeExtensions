@@ -1,4 +1,4 @@
-namespace Ngb.DateTime.TimeZone;
+namespace Ngb.DateTimeHelper.TimeZone;
 
 public static class TimeZoneName {
     public const string AsiaJakarta = "Asia/Jakarta";

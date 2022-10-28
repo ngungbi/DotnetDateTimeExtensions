@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         <PackageId>Ngb.DateTime</PackageId>
         <Authors>Harish Mahatma Putra</Authors>
-        <RootNamespace>Ngb.DateTime</RootNamespace>
+        <RootNamespace>Ngb.DateTimeHelper</RootNamespace>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <RepositoryUrl>https://github.com/ngungbi/DotnetDateTimeExtensions</RepositoryUrl>
         <RepositoryType>git</RepositoryType>

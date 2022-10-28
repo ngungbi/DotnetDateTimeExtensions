@@ -2,7 +2,7 @@ using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Ngb.DateTime;
+namespace Ngb.DateTimeHelper;
 
 public sealed class TimeOnlyJsonConverter : JsonConverter<TimeOnly> {
     public override TimeOnly Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options) {
